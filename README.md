@@ -1,6 +1,6 @@
 # LanServers
 
-This is a small plugin written in Kotlin that runs on all major Minecraft Sevrers.  
+This is a small plugin written in Kotlin that runs on all major Minecraft Servers.  
 The only feature is listing the server as a LanServer in the Multiplayer-Menu of Minecraft.  
 
 # Supported Servers
