@@ -1,0 +1,358 @@
+{
+  "libraries": [
+    {
+      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.6.10/kotlin-stdlib-jdk8-1.6.10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.6.10/kotlin-stdlib-1.6.10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains:annotations:13.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.10/kotlin-stdlib-common-1.6.10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.10/kotlin-stdlib-jdk7-1.6.10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.bukkit:bukkit:1.8.8-R0.1-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.8.8-R0.1-SNAPSHOT/bukkit-1.8.8-R0.1-20160221.082532-43.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: commons-lang:commons-lang:2.6",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.googlecode.json-simple:json-simple:1.1.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: junit:junit:4.10",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.hamcrest:hamcrest-core:1.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.guava:guava:17.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.code.gson:gson:2.2.4",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.avaje:ebean:2.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/avaje/ebean/2.8.1/ebean-2.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: javax.persistence:persistence-api:1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.yaml:snakeyaml:1.15",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-api:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-api/1.16-R0.5-SNAPSHOT/bungeecord-api-1.16-R0.5-20210527.222528-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-chat:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-chat/1.16-R0.5-SNAPSHOT/bungeecord-chat-1.16-R0.5-20210527.222444-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-config:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-config/1.16-R0.5-SNAPSHOT/bungeecord-config-1.16-R0.5-20210527.222453-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-event:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-event/1.16-R0.5-SNAPSHOT/bungeecord-event-1.16-R0.5-20210527.222501-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-protocol:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-protocol/1.16-R0.5-SNAPSHOT/bungeecord-protocol-1.16-R0.5-20210527.222514-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:brigadier:1.0.16-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/brigadier/1.0.16-SNAPSHOT/brigadier-1.0.16-20181219.233212-1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-codec:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.sf.trove4j:core:3.1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/sf/trove4j/core/3.1.0/core-3.1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: se.llbit:jo-nbt:1.3.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/se/llbit/jo-nbt/1.3.0/jo-nbt-1.3.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport-native-unix-common:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-common:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-buffer:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-resolver:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.velocitypowered:velocity-api:3.0.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/velocitypowered/velocity-api/3.0.1/velocity-api-3.0.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.moandjiezana.toml:toml4j:0.7.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:adventure-api:4.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/adventure-api/4.8.1/adventure-api-4.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:adventure-key:4.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/adventure-key/4.8.1/adventure-key-4.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:examination-api:1.1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/examination-api/1.1.0/examination-api-1.1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:examination-string:1.1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/examination-string/1.1.0/examination-string-1.1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:adventure-text-serializer-gson:4.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/adventure-text-serializer-gson/4.8.1/adventure-text-serializer-gson-4.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:adventure-text-serializer-legacy:4.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/adventure-text-serializer-legacy/4.8.1/adventure-text-serializer-legacy-4.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.kyori:adventure-text-serializer-plain:4.8.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/kyori/adventure-text-serializer-plain/4.8.1/adventure-text-serializer-plain-4.8.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.slf4j:slf4j-api:1.7.30",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.inject:guice:5.0.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/inject/guice/5.0.1/guice-5.0.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: javax.inject:javax.inject:1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: aopalliance:aopalliance:1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.checkerframework:checker-qual:3.6.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.6.1/checker-qual-3.6.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.velocitypowered:velocity-brigadier:1.0.0-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/velocity-brigadier-1.0.0-20210613.082804-10.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:configurate-hocon:3.7.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/configurate-hocon/3.7.2/configurate-hocon-3.7.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:configurate-core:3.7.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/configurate-core/3.7.2/configurate-core-3.7.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.typesafe:config:1.4.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/typesafe/config/1.4.0/config-1.4.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:configurate-yaml:3.7.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/configurate-yaml/3.7.2/configurate-yaml-3.7.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:configurate-gson:3.7.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/configurate-gson/3.7.2/configurate-gson-3.7.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:spongeapi:7.2.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/spongeapi/7.2.0/spongeapi-7.2.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.errorprone:error_prone_annotations:2.0.15",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.0.15/error_prone_annotations-2.0.15.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.apache.commons:commons-lang3:3.5",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.code.findbugs:jsr305:3.0.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.github.ben-manes.caffeine:caffeine:2.5.4",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/caffeine/2.5.4/caffeine-2.5.4.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.github.ben-manes.caffeine:guava:2.5.4",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/github/ben-manes/caffeine/guava/2.5.4/guava-2.5.4.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.spongepowered:plugin-meta:0.4.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/spongepowered/plugin-meta/0.4.1/plugin-meta-0.4.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.flowpowered:flow-math:1.0.3",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/flowpowered/flow-math/1.0.3/flow-math-1.0.3.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.flowpowered:flow-noise:1.0.1-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/flowpowered/flow-noise/1.0.1-SNAPSHOT/flow-noise-1.0.1-20170421.012500-12.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.ow2.asm:asm:5.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.2/asm-5.2.jar!/"
+      ]
+    }
+  ]
+}

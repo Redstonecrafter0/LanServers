@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "name": "lanservers",
+      "languageLevel": 8
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "total": 1,
+  "tools inspection": {
+    "Code Inspection": 1
+  },
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/Redstonecrafter0/LanServers",
+        "revisionId": "2c454b13967aa13cf29f566b44ff40cc5e9f12b2",
+        "branch": "dev"
+      }
+    },
+    "deviceId": "200820300000000-3e6e-3021-93cb-94af156f7c29"
+  }
+}
