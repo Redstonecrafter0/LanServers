@@ -1,0 +1,10 @@
+[{
+    "modid": "lanservers",
+    "name": "LanServers",
+    "version": "${project.version}",
+    "description": "Lists the Server on the Multiplayer list as LanServer if on the same network.",
+    "authorList": [
+        "Redstonecrafter0"
+    ],
+    "dependencies": []
+}]

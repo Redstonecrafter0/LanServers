@@ -1,0 +1,6 @@
+name: LanServers
+main: net.redstonecraft.lanservers.LanServersBukkit
+version: ${project.version}
+author: Redstonecrafter0
+description: Lists the Server on the Multiplayer list as LanServer if on the same network.
+website: 'https://github.com/Redstonecrafter0/LanServers'

@@ -1,0 +1,12 @@
+{
+  "id": "lanservers",
+  "name": "LanServers",
+  "version": "${project.version}",
+  "description": "Lists the Server on the Multiplayer list as LanServer if on the same network.",
+  "url": "https://github.com/Redstonecrafter0/LanServers",
+  "authors": [
+    "Redstonecrafter0"
+  ],
+  "dependencies": [],
+  "main": "net.redstonecraft.lanservers.LanServersVelocity"
+}
