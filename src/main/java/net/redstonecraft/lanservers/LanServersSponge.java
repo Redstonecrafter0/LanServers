@@ -8,6 +8,9 @@ import org.spongepowered.api.event.game.state.GameStoppedServerEvent;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.text.serializer.TextSerializers;
 
+import java.net.InetSocketAddress;
+import java.util.Optional;
+
 @Plugin(
         id = "lanservers",
         name = "LanServers",
@@ -23,7 +26,9 @@ public class LanServersSponge implements LanServersPlugin {
 
     @Override
     public int getPort() {
-        return game.getServer().getBoundAddress().get().getPort();
+        Optional<InetSocketAddress> address = game.getServer().getBoundAddress();
+        if (address.isPresent()) return address.get().getPort();
+        throw new IllegalStateException("There was no port bound to. UNIX Sockets aren't supported-");
     }
 
     @Override

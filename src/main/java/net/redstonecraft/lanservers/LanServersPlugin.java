@@ -19,7 +19,7 @@ public interface LanServersPlugin {
             @Override
             public void run() {
                 byte[] data = ("[MOTD]" +  getMotd() + "[/MOTD][AD]" + getPort() + "[/AD]").getBytes(StandardCharsets.UTF_8);
-                DatagramPacket packet = new DatagramPacket(data, data.length, Internal.multicastAdress, Internal.multicastPort);
+                DatagramPacket packet = new DatagramPacket(data, data.length, Internal.multicastAddress, Internal.multicastPort);
                 try {
                     Internal.socket.send(packet);
                 } catch (IOException ignored) {}
@@ -34,13 +34,13 @@ public interface LanServersPlugin {
 
     class Internal {
         static Timer timer = new Timer();
-        static InetAddress multicastAdress;
+        static InetAddress multicastAddress;
         static int multicastPort = 4445;
         static DatagramSocket socket;
 
         static {
             try {
-                multicastAdress = InetAddress.getByName("224.0.2.60");
+                multicastAddress = InetAddress.getByName("224.0.2.60");
             } catch (UnknownHostException ignored) {}
         }
     }
