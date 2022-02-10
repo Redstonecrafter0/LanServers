@@ -1,0 +1,32 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Assignment issues",
+  "type": "Assignment to static field from instance context",
+  "tags": [
+    "JAVA"
+  ],
+  "severity": "High",
+  "comment": "Assignment to static field <code>Internal.socket</code> from instance context",
+  "detailsInfo": "Reports assignment to, or modification of `static` fields from within an instance method.\n\nAlthough legal, such assignments are tricky to do\nsafely and are often a result of marking fields `static` inadvertently.\n\n**Example:**\n\n\n      class Counter {\n        private static int count = 0;\n\n        void increment() {\n          // Warning: updating a static field\n          // from an instance method\n          count++;\n        }\n      }\n",
+  "sources": [
+    {
+      "type": "method",
+      "path": "src/main/java/net/redstonecraft/lanservers/LanServersPlugin.java",
+      "language": "JAVA",
+      "line": 16,
+      "offset": 12,
+      "length": 15,
+      "code": {
+        "startLine": 14,
+        "length": 15,
+        "offset": 54,
+        "surroundingCode": "    default void enable() {\n        try {\n            Internal.socket = new DatagramSocket();\n        } catch (SocketException ignored) {}\n        Internal.timer.schedule(new TimerTask() {"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "lanservers",
+    "inspectionName": "AssignmentToStaticFieldFromInstanceMethod"
+  },
+  "hash": "-3278400525049739480"
+}]}

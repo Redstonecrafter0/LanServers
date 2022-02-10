@@ -7,6 +7,11 @@
           "path": "file://$PROJECT_DIR$",
           "sourceFolders": [
             {
+              "path": "file://$PROJECT_DIR$/src/main/java",
+              "type": "Source",
+              "packagePrefix": ""
+            },
+            {
               "path": "file://$PROJECT_DIR$/src/main/kotlin",
               "type": "Source",
               "packagePrefix": ""
@@ -14,11 +19,6 @@
             {
               "path": "file://$PROJECT_DIR$/src/main/resources",
               "type": "Resource",
-              "packagePrefix": ""
-            },
-            {
-              "path": "file://$PROJECT_DIR$/src/main/java",
-              "type": "Source",
               "packagePrefix": ""
             }
           ]
