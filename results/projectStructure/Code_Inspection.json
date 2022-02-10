@@ -15,6 +15,11 @@
               "path": "file://$PROJECT_DIR$/src/main/resources",
               "type": "Resource",
               "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/src/main/java",
+              "type": "Source",
+              "packagePrefix": ""
             }
           ]
         }
@@ -27,26 +32,6 @@
         {
           "name": "<Module source>",
           "type": "Own sources"
-        },
-        {
-          "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.jetbrains:annotations:13.0",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10",
-          "type": "Library"
-        },
-        {
-          "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10",
-          "type": "Library"
         },
         {
           "name": "Maven: org.bukkit:bukkit:1.8.8-R0.1-SNAPSHOT",
@@ -166,6 +151,10 @@
         },
         {
           "name": "Maven: net.kyori:examination-string:1.1.0",
+          "type": "Library"
+        },
+        {
+          "name": "Maven: org.jetbrains:annotations:21.0.1",
           "type": "Library"
         },
         {

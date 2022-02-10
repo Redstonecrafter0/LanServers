@@ -1,36 +1,6 @@
 {
   "libraries": [
     {
-      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
-      "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.6.10/kotlin-stdlib-jdk8-1.6.10.jar!/"
-      ]
-    },
-    {
-      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
-      "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/1.6.10/kotlin-stdlib-1.6.10.jar!/"
-      ]
-    },
-    {
-      "name": "Maven: org.jetbrains:annotations:13.0",
-      "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/"
-      ]
-    },
-    {
-      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10",
-      "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.10/kotlin-stdlib-common-1.6.10.jar!/"
-      ]
-    },
-    {
-      "name": "Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10",
-      "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.6.10/kotlin-stdlib-jdk7-1.6.10.jar!/"
-      ]
-    },
-    {
       "name": "Maven: org.bukkit:bukkit:1.8.8-R0.1-SNAPSHOT",
       "roots": [
         "jar://$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.8.8-R0.1-SNAPSHOT/bukkit-1.8.8-R0.1-20160221.082532-43.jar!/"
@@ -208,6 +178,12 @@
       "name": "Maven: net.kyori:examination-string:1.1.0",
       "roots": [
         "jar://$MAVEN_REPOSITORY$/net/kyori/examination-string/1.1.0/examination-string-1.1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.jetbrains:annotations:21.0.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/21.0.1/annotations-21.0.1.jar!/"
       ]
     },
     {

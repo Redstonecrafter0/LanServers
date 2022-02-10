@@ -1,1 +1,29 @@
-{"version":"3","listProblem":[]}
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Probable bugs",
+  "type": "Optional.get() is called without isPresent() check",
+  "severity": "High",
+  "comment": "`Optional.get()` without 'isPresent()' check",
+  "detailsInfo": "Reports calls to `get()` on an `Optional` without checking that it has a value.\n\nCalling `Optional.get()` on an empty `Optional` instance will throw an exception.\n\n**Example:**\n\n\n      void x(List<Integer> list) {\n        final Optional<Integer> optional =\n          list.stream().filter(x -> x > 10).findFirst();\n        final Integer result = optional.get(); // problem here\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/net/redstonecraft/lanservers/LanServersSponge.java",
+      "language": "JAVA",
+      "line": 26,
+      "offset": 51,
+      "length": 3,
+      "code": {
+        "startLine": 24,
+        "length": 3,
+        "offset": 91,
+        "surroundingCode": "    @Override\n    public int getPort() {\n        return game.getServer().getBoundAddress().get().getPort();\n    }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "lanservers",
+    "inspectionName": "OptionalGetWithoutIsPresent"
+  },
+  "hash": "309cb16e6518e819670e988c20a8f3d41c2fdd6574bbf5971e951df8925b5f58"
+}]}
