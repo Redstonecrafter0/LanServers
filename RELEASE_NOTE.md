@@ -1,10 +1,13 @@
-New Release v{{ VERSION }}
+LanServers v{{ VERSION }}
 
-# New Release v{{ VERSION }}
+# New Release LanServers v{{ VERSION }}
 
 This is a new version of LanServers.
 
-To use it you need at least Java 8.
+To use it you need at least Java 8 but everything higher works as well.
+
+# Changelog
+Ported to Java and reduced the jar size from ~2 MB to ~10 kB.
 
 # Compatibility
 This plugin is one jar that runs on all major servers.
