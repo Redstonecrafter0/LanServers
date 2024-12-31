@@ -9,7 +9,7 @@ The only feature is listing the server as a LanServer in the Multiplayer-Menu of
 - Sponge 7.2+
 - Velocity 3.0.1+
 
-# What does it exactly?
+# What does it do exactly?
 The same as the Minecraft Client when you open your world to LAN.  
 It sends every 1.5 seconds a special message with the server port and MOTD to `224.0.2.60` on port 4445.
 `224.0.2.60` is a Multicast Address which means that everyone in you local network that wants
