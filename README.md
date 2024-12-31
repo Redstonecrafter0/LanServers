@@ -6,7 +6,6 @@ The only feature is listing the server as a LanServer in the Multiplayer-Menu of
 # Supported Servers
 - Bukkit/Spigot/Paper 1.8+
 - Bungeecord 1.16+
-- Sponge 7.2+
 - Velocity 3.0.1+
 
 # What does it do exactly?
