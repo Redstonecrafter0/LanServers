@@ -2,8 +2,8 @@ package net.redstonecraft.lanservers;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import java.io.IOException;
+
 
 public class LanServersBukkit extends JavaPlugin implements ILanServersPlugin {
 
@@ -14,7 +14,7 @@ public class LanServersBukkit extends JavaPlugin implements ILanServersPlugin {
         if (lanServers == null) {
             try {
                 lanServers = new LanServers(this);
-            } catch (UnknownHostException | SocketException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }

@@ -9,13 +9,13 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.slf4j.Logger;
 
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import java.io.IOException;
+
 
 @Plugin(
     id = "lanservers",
     name = "LanServers",
-    version = "1.1.0",
+    version = "2.0.0",
     description = "Lists the Server on the Multiplayer list as LanServer if on the same network.",
     url = "https://github.com/Redstonecrafter0/LanServers",
     authors = {
@@ -37,7 +37,7 @@ public class LanServersVelocity implements ILanServersPlugin {
         if (lanServers == null) {
             try {
                 lanServers = new LanServers(this);
-            } catch (UnknownHostException | SocketException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }

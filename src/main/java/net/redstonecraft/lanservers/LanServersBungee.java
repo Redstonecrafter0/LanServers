@@ -3,8 +3,7 @@ package net.redstonecraft.lanservers;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import java.io.IOException;
 import java.util.Objects;
 
 public class LanServersBungee extends Plugin implements ILanServersPlugin {
@@ -16,7 +15,7 @@ public class LanServersBungee extends Plugin implements ILanServersPlugin {
         if (lanServers == null) {
             try {
                 lanServers = new LanServers(this);
-            } catch (UnknownHostException | SocketException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
