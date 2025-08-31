@@ -66,6 +66,7 @@ public class LanServers {
                             // get actual address
                             // make socket, ignore errors
                             .map(ifaddr -> ifaddr.getAddress())
+                            .filter(inaddr -> (inaddr instanceof Inet4Address))
                             .map(inaddr -> new InetSocketAddress(inaddr, multicastPort))
                             .map(insaddr -> {
                                 try {
