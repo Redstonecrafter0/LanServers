@@ -4,7 +4,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
 
-
 public class LanServersBukkit extends JavaPlugin implements ILanServersPlugin {
 
     private LanServers lanServers = null;

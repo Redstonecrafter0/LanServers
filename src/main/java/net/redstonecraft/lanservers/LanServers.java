@@ -51,9 +51,7 @@ public class LanServers {
 
     private static List<MulticastSocket> getSourceSockets() {
         try {
-            // Take all network interfaces
             return Collections.list(NetworkInterface.getNetworkInterfaces()).stream()
-                    // keep all relevant (not localhost, up, can multicast)
                     .filter(iface -> {
                         try {
                             return iface.supportsMulticast() && iface.isUp() && !iface.isLoopback();
@@ -63,8 +61,6 @@ public class LanServers {
                     })
                     // interface can have multiple addresses, make a loooong list
                     .flatMap(iface -> iface.getInterfaceAddresses().stream()
-                            // get actual address
-                            // make socket, ignore errors
                             .map(ifaddr -> ifaddr.getAddress())
                             .filter(inaddr -> (inaddr instanceof Inet4Address))
                             .map(inaddr -> new InetSocketAddress(inaddr, multicastPort))
