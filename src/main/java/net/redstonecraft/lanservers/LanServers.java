@@ -65,12 +65,15 @@ public class LanServers {
                             .filter(inaddr -> (inaddr instanceof Inet4Address))
                             .map(inaddr -> new InetSocketAddress(inaddr, multicastPort))
                             .map(insaddr -> {
+                                // Only interested in interfaces/addresses that
+                                // can do multicast, so ignore errors ...
                                 try {
                                     return new MulticastSocket(insaddr);
                                 } catch (IOException e) {
                                     return null;
                                 }
                             }))
+                    // ... and filter out null afterwards
                     .filter(Objects::nonNull)
                     .collect(Collectors.toList());
         } catch (SocketException e) {
