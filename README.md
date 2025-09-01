@@ -13,8 +13,8 @@ The only feature is listing the server as a LanServer in the Multiplayer-Menu of
 
 The same as the Minecraft Client when you open your world to LAN.  
 
-Every 1.5 seconds, the plugin sends a special message with the server port and MOTD to `224.0.2.60` — or `ff75:230::60` for IPv6 — on port 4445 from every interface.
-`224.0.2.60` and `ff75:230::60` are _multicast_ addresses which means that everyone in you local network that wants
-to get messages sent these addresses will get them, for example, like your Minecraft Client when you're in the Multiplayer Menu.
+Every 1.5 seconds, the plugin sends a special message with the server port and MOTD to `224.0.2.60` on port 4445 from every interface.
+`224.0.2.60` is a _multicast_ addresse which means that everyone in you local network that wants
+to get messages sent to this address will get them, for example, like your Minecraft Client when you're in the Multiplayer Menu.
 
 That's all it does so compatibility should not break when updating to newer Server versions.
