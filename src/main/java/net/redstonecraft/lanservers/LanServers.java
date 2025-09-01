@@ -18,14 +18,14 @@ public class LanServers {
     private final List<MulticastSocket> sources = LanServers.getSourceSockets();
     private final ILanServersPlugin plugin;
 
-    public LanServers(ILanServersPlugin plugin) throws IOException {
+    public LanServers(ILanServersPlugin plugin) throws UnknownHostException, SocketException {
         this.plugin = plugin;
+    }
+
+    public void enable() throws IOException {
         for (MulticastSocket socket : sources) {
             socket.joinGroup(multicastAddress);
         }
-    }
-
-    public void enable() {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {

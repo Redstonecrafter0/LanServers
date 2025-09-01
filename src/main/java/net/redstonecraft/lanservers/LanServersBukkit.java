@@ -13,11 +13,11 @@ public class LanServersBukkit extends JavaPlugin implements ILanServersPlugin {
         if (lanServers == null) {
             try {
                 lanServers = new LanServers(this);
+                lanServers.enable();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        lanServers.enable();
     }
 
     @Override

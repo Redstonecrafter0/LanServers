@@ -36,11 +36,11 @@ public class LanServersVelocity implements ILanServersPlugin {
         if (lanServers == null) {
             try {
                 lanServers = new LanServers(this);
+                lanServers.enable();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        lanServers.enable();
     }
 
     @Subscribe
