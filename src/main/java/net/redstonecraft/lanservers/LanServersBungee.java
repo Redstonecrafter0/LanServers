@@ -38,4 +38,14 @@ public class LanServersBungee extends Plugin implements ILanServersPlugin {
         return Objects.requireNonNull(ProxyServer.getInstance().getConfig().getListeners().stream().findFirst().orElse(null)).getMotd();
     }
 
+    @Override
+    public void logError(String message) {
+        getLogger().severe("[LanServers] " + message);
+    }
+
+    @Override
+    public void logError(String message, Throwable throwable) {
+        getLogger().log(java.util.logging.Level.SEVERE, "[LanServers] " + message, throwable);
+    }
+
 }

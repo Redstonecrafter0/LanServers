@@ -15,7 +15,7 @@ import java.net.UnknownHostException;
 @Plugin(
     id = "lanservers",
     name = "LanServers",
-    version = "1.1.0",
+    version = "1.2.0",
     description = "Lists the Server on the Multiplayer list as LanServer if on the same network.",
     url = "https://github.com/Redstonecrafter0/LanServers",
     authors = {
@@ -26,10 +26,12 @@ public class LanServersVelocity implements ILanServersPlugin {
 
     private final ProxyServer server;
     private LanServers lanServers = null;
+    private Logger logger;
 
     @Inject
     LanServersVelocity(ProxyServer server, Logger logger) {
         this.server = server;
+        this.logger = logger;
     }
 
     @Subscribe
@@ -57,6 +59,16 @@ public class LanServersVelocity implements ILanServersPlugin {
     @Override
     public String getMotd() {
         return LegacyComponentSerializer.legacySection().serialize(server.getConfiguration().getMotd());
+    }
+
+    @Override
+    public void logError(String message) {
+        logger.error("[LanServers] {}", message);
+    }
+
+    @Override
+    public void logError(String message, Throwable throwable) {
+        logger.error("[LanServers] {}", message, throwable);
     }
 
 }
