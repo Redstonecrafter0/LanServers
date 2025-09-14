@@ -36,4 +36,14 @@ public class LanServersBukkit extends JavaPlugin implements ILanServersPlugin {
         return getServer().getMotd();
     }
 
+    @Override
+    public void logError(String message) {
+        getLogger().severe("[LanServers] " + message);
+    }
+
+    @Override
+    public void logError(String message, Throwable throwable) {
+        getLogger().log(java.util.logging.Level.SEVERE, "[LanServers] " + message, throwable);
+    }
+
 }

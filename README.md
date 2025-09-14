@@ -15,3 +15,12 @@ It sends every 1.5 seconds a special message with the server port and MOTD to `2
 to get messages sent to `224.0.2.60` will get them like your Minecraft Client when you're in the Multiplayer Menu.
 
 That's all it does, so compatibility should not break when updating to newer Server versions.
+
+# Config
+To keep the plugin small and working on all servers, there is no config file.
+Instead, Java System Properties are used, which you can set in your server startup script
+using `-Ddev.redstones.lanservers.setting=value` before the `-jar` argument.
+
+| Java System Property                     | Description                                       | Default Behaviour                |
+|------------------------------------------|---------------------------------------------------|----------------------------------|
+| `dev.redstones.lanservers.bindAddresses` | Comma separated list of IP addresses to send from | All interface addresses are used |
