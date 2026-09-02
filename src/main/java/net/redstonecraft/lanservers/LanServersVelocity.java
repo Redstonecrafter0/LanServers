@@ -15,7 +15,7 @@ import java.net.UnknownHostException;
 @Plugin(
     id = "lanservers",
     name = "LanServers",
-    version = "1.2.0",
+    version = "1.2.1",
     description = "Lists the Server on the Multiplayer list as LanServer if on the same network.",
     url = "https://github.com/Redstonecrafter0/LanServers",
     authors = {
